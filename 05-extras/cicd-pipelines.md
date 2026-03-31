@@ -6,7 +6,14 @@ A CI pipeline on every pull request catches two categories of problems before th
 
 **Manifest validation** - builds your full manifest with `kustomize build`, renders any Helm charts inline, and schema-validates every resource against the Kubernetes API spec. If a resource reference is wrong, a value is missing, or a field doesn't exist in the spec, the PR fails before anything merges. Tools like [kubeconform](https://github.com/yannh/kubeconform) handle the schema validation step.
 
-**Security scanning** - catches hardcoded secrets committed by accident (API keys, tokens, passwords), and flags common Kubernetes misconfigurations like privileged containers or missing security contexts. [gitleaks](https://github.com/gitleaks/gitleaks) and [Trivy](https://aquasecurity.github.io/trivy) are commonly used for this, but there are many alternatives.
+**Security scanning** - catches hardcoded secrets committed by accident (API keys, tokens, passwords), and flags common Kubernetes misconfigurations like privileged containers or missing security contexts. [gitleaks](https://github.com/gitleaks/gitleaks) and [Trivy](https://aquasecurity.github.io/trivy) are commonly used for this, but there are many alternatives. 
+
+> [!WARNING]
+> **Trivy supply chain compromise (March 19, 2026):** Threat actors (TeamPCP) compromised Aqua Security's release pipeline and pushed a malicious binary (v0.69.4), along with backdoored versions of `trivy-action` (tags v0.0.1-v0.34.2) and `setup-trivy`. The malware read GitHub Actions runner memory to extract secrets and exfiltrate them to an attacker-controlled server. Any CI pipeline that used these versions may have had secrets stolen.
+>
+> **Safe versions:** `trivy` binary v0.69.3 or earlier, `trivy-action` v0.35.0 or later, `setup-trivy` v0.2.6 or later. Pin Actions by commit SHA rather than tag to prevent future tag-replacement attacks.
+>
+> See the [official security advisory](https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23) and [Aqua Security's incident report](https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know/) for full details. This incident is a good example of why pinning dependencies by hash (not just version tag) matters in CI/CD pipelines.
 
 Both GitHub Actions and GitLab CI support running these as jobs on pull requests. Configure them to block merges unless both checks pass. The specific tools are up to you; here is a minimal GitHub Actions example using kubeconform for manifest validation and gitleaks for secret scanning as a starting point:
 
