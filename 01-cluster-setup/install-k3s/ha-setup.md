@@ -1,6 +1,6 @@
 ### High-availability setup (3 server nodes + embedded etcd)
 
-**Use this instead of 3.2 if you want true control plane fault tolerance.** Requires a minimum of 3 server nodes (etcd requires an odd number to maintain quorum): with 3 servers the cluster tolerates 1 failure, with 5 it tolerates 2.
+**Use this instead of multi-node if you want true control plane fault tolerance.** Requires a minimum of 3 server nodes (etcd requires an odd number to maintain quorum): with 3 servers the cluster tolerates 1 failure, with 5 it tolerates 2.
 
 > **Reference:** [K3S High Availability with Embedded etcd](https://docs.k3s.io/datastore/ha-embedded)
 

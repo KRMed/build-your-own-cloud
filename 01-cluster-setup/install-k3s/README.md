@@ -10,25 +10,17 @@ K3S is a lightweight, certified Kubernetes distribution that packages containerd
 
 ## Which setup path should I use?
 
-```mermaid
-flowchart TD
-    A([How many machines do you have?])
-    A -->|1 machine| B([Single-node setup])
-    A -->|2 machines| C([Multi-node setup])
-    A -->|3+ machines| D([Does the control plane need to survive a node failure?])
-    D -->|No| C
-    D -->|Yes| E([High-availability setup])
-
-    click B "single-node.md"
-    click C "mutli-node.md"
-    click E "ha-setup.md"
-```
+<div align="center">
+    <img src="../../references/diagrams/install-k3s-flow.svg" alt="Install K3S setup decision flow" />
+</div>
 
 | Setup | Machines | Description |
 |---|---|---|
 | [Single-node](single-node.md) | 1 | Control plane and workloads on one machine. Simplest path. |
-| [Multi-node](mutli-node.md) | 2+ | One server node, one or more agent nodes. |
+| [Multi-node](multi-node.md) | 2+ | One server node, one or more agent nodes. |
 | [High-availability](ha-setup.md) | 3+ servers | Embedded etcd across 3 server nodes. Tolerates 1 control plane failure. |
 
 > [!TIP]
+> Unsure about Multi-node vs HA? Read [multi-node-vs-ha.md](multi-node-vs-ha.md) first. It is short and helps you choose quickly.
+>
 > Not sure? Start with single-node. You can add agent nodes later without reinstalling, and migrate to HA when you actually need it.

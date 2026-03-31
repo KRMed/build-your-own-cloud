@@ -9,18 +9,9 @@ This section decides how traffic gets from the outside world (or your local netw
 
 ## Which option should I use?
 
-```mermaid
-flowchart TD
-    A([Do you need services reachable from the internet?])
-    A -->|No| B([Option C - LAN-only])
-    A -->|Yes| C([Do you have a static public IP or are you on a VPS/cloud server?])
-    C -->|Yes| D([Option B - Direct public IP or port forwarding])
-    C -->|No - my ISP assigns a dynamic public IP| E([Option A - Cloudflare Tunnel])
-
-    click B "option-c-lan-only.md"
-    click D "option-b-public-ip.md"
-    click E "option-a-cloudflare-tunnel.md"
-```
+<p align="center">
+    <img src="..\references\diagrams\expose-services-flow.svg" alt="Expose services decision flow" />
+</p>
 
 > [!NOTE]
 > The static IPs you set on your nodes in the cluster setup section were internal LAN addresses (e.g. `192.168.1.50`), required so K3S doesn't break when a node's local address changes. The IP being discussed here is different: it's the *public* IP your ISP assigns to your router. Most home internet connections get a dynamic public IP that changes periodically, which is why Option A exists.

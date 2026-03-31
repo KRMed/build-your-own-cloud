@@ -36,7 +36,7 @@ These are the minimums for K3S to run, not for the full stack described in this 
 
 **One node** is enough to run the full stack described here. A single node acts as both the control plane and the workload runner. The monitoring stack (Prometheus + Grafana + Alertmanager) is the most resource-intensive part with at least 3-4GB RAM minimum for a comfortable single-node setup
 
-**Multiple nodes** give you fault tolerance and let you spread workloads. In a multi-node K3S setup, you designate one or more nodes as **servers or control nodes** (they run the control plane) and the rest as **agents or worker nodes** (they run workloads only). Adding nodes is covered in [multi-node setup](install-k3s/mutli-node.md)
+**Multiple nodes** give you fault tolerance and let you spread workloads. In a multi-node K3S setup, you designate one or more nodes as **servers or control nodes** (they run the control plane) and the rest as **agents or worker nodes** (they run workloads only). Adding nodes is covered in [multi-node setup](install-k3s/multi-node.md)
 
 For most home lab setups, **one server node is enough**. The control plane is a single point of failure but in practice it only affects scheduling new workloads, not the running ones. If you have 3 or more nodes and care about the cluster staying fully operational through a node failure, consider running **3 server nodes** with embedded etcd (the minimum for a healthy HA quorum) and use any additional nodes as agents.
 

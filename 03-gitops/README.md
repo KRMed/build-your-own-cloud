@@ -8,17 +8,9 @@ The full GitOps setup is recommended but not required. If you prefer to deploy m
 
 ## Do I need this section?
 
-```mermaid
-flowchart TD
-    A([Do you want ArgoCD to manage your cluster automatically?])
-    A -->|Yes| B([Read all five files in order])
-    A -->|Not sure| C([Read what-is-gitops.md first, then decide])
-    A -->|No, I'll deploy manually with kubectl apply| D([Skip to 04-deploy])
-
-    click B "what-is-gitops.md"
-    click C "what-is-gitops.md"
-    click D "../04-deploy/"
-```
+<p align="center">
+    <img src="../references/diagrams/gitops-flow.svg" alt="GitOps decision flow" />
+</p>
 
 > [!TIP]
 > Not sure if you want GitOps? Read [what-is-gitops.md](what-is-gitops.md) first. It's short and explains the tradeoffs clearly. You can always add ArgoCD later.

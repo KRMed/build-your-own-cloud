@@ -4,7 +4,6 @@ This section gets a working Kubernetes cluster onto your hardware and gives you 
 
 **Before you start:** You need at least one machine running a 64-bit Linux OS. If you haven't chosen hardware or installed an OS yet, start with [hardware-and-os.md](hardware-and-os.md).
 
----
 
 | Step | File | Notes |
 |---|---|---|
@@ -13,6 +12,8 @@ This section gets a working Kubernetes cluster onto your hardware and gives you 
 | 3 | [Install K3S](install-k3s/) | Required — see install-k3s/ for the setup path that matches your node count |
 | 4 | [Configure kubectl](configure-kubectl.md) | Required to manage the cluster from your local machine |
 | 5 | [Install Helm](install-helm.md) | Required if using Helm charts (ingress-nginx, monitoring stack) |
+
+<br>
 
 > [!NOTE]
 > Upgrading K3S later? See [install-k3s/upgrading.md](install-k3s/upgrading.md).
