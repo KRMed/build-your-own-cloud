@@ -29,10 +29,6 @@ This covers most of what went into building my personal cloud project firsthand.
 
 ---
 
-**Not sure which exposure method to pick?** If you just want to get started quickly with no accounts or DNS setup, use [Option C (LAN-only)](02-expose-services/option-c-lan-only.md). You can migrate to [Option A (Cloudflare Tunnel)](02-expose-services/option-a-cloudflare-tunnel.md) later when you want public access.
-
----
-
 ## Checkpoints
 
 | | Folder | What's inside | After this section |
