@@ -36,7 +36,7 @@ jobs:
       - name: Validate
         run: |
           kustomize build clusters/prod --load-restrictor LoadRestrictionsNone | \
-          kubeconform -strict -kubernetes-version <KUBERNETES_VERSION>  # use the current stable version — find it at https://kubernetes.io/releases/ (e.g. "1.32.0")
+          kubeconform -strict -kubernetes-version <KUBERNETES_VERSION>  # use the current stable version - find it at https://kubernetes.io/releases/ (e.g. "1.32.0")
 
   secrets:
     runs-on: ubuntu-latest
