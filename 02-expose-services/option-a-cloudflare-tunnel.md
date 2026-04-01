@@ -32,6 +32,9 @@ In the tunnel configuration, add a hostname entry for each service you want to e
 
 All hostnames point to the same backend - the ingress controller. NGINX reads the `Host` header on each incoming request and routes it to the correct service inside the cluster. This means the tunnel only needs to know about one backend, and all routing logic lives in your Kubernetes `Ingress` resources.
 
+> [!NOTE]
+> Use your domain’s actual top-level domain (TLD), which may not be .com (ex. .cloud, .org, .net)
+
 > If you are not using ingress-nginx, set the URL to `http://<NODE_IP>:<NODEPORT>` for each service directly.
 
 **How traffic flows end-to-end:**
