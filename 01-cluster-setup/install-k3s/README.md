@@ -22,4 +22,4 @@ K3S is a lightweight, certified Kubernetes distribution that packages containerd
 
 > [!TIP]
 > Unsure about Multi-node vs HA? Read [multi-node-vs-ha.md](multi-node-vs-ha.md) first. 
-> Not sure? Start with single-node. You can add agent nodes later without reinstalling, and migrate to HA when you actually need it.
+> Still not sure? Start with single-node. You can add agent nodes later without reinstalling, and migrate to HA when you actually need it.
