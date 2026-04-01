@@ -34,4 +34,4 @@ Verify:
 helm version
 ```
 
-→ **Next:** [Expose Your Services →](../02-expose-services/)
+**Next:** [Expose Your Services →](../02-expose-services/)

@@ -23,4 +23,4 @@ If you are just experimenting or running a single app, `kubectl apply` is simple
 
 > **Reference:** [ArgoCD Overview](https://argo-cd.readthedocs.io/en/stable/) | [OpenGitOps - What is GitOps?](https://opengitops.dev/)
 
-→ **Next:** [Bootstrap ArgoCD](bootstrap-argocd.md)
+**Next:** [Bootstrap ArgoCD](bootstrap-argocd.md)

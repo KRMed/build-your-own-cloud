@@ -79,4 +79,4 @@ You should see K3S system pods running in `kube-system`. If you get a TLS error 
 
 If you already have a kubeconfig for another cluster, merge them rather than overwriting. See the [kubectl kubeconfig merge docs](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#merging-kubeconfig-files) for how to combine multiple cluster configs and switch between them with `kubectl config use-context`.
 
-→ **Next:** [Install Helm](install-helm.md)
+**  Next:** [Install Helm](install-helm.md)

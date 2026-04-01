@@ -23,4 +23,4 @@ Install ingress-nginx as in the full setup. Then configure your home router's DN
 
 > **Reference:** [Pi-hole Local DNS Records](https://docs.pi-hole.net/ftldns/dns-records/)
 
-→ **Next:** [GitOps](../03-gitops/)
+**Next:** [GitOps](../03-gitops/)

@@ -40,7 +40,7 @@ All hostnames point to the same backend - the ingress controller. NGINX reads th
 Browser
   → Cloudflare Edge (TLS terminates here)
   → Cloudflared pod inside your cluster (outbound tunnel)
-  → NGINX Ingress Controller (routes by hostname)
+  NGINX Ingress Controller (routes by hostname)
   → ClusterIP Service
   → Your app pods
 ```
@@ -112,4 +112,4 @@ resources:
 
 > **Checkpoint:** Once the tunnel shows **Active** in the Cloudflare dashboard, your cluster is reachable from the internet with no open ports on your router. Cloudflare owns the DNS record and terminates TLS at its edge. The cloudflared pod inside your cluster holds a persistent outbound connection to Cloudflare - all inbound traffic travels back through that connection. Your home IP never appears in DNS.
 
-→ **Next:** [GitOps](../03-gitops/)
+**Next:** [GitOps](../03-gitops/)

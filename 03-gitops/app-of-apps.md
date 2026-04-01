@@ -120,7 +120,7 @@ Some components depend on others being ready first. A typical order:
 5. **monitoring extras** - ServiceMonitors that configure Prometheus scrape targets
 6. **application workloads** - your apps
 
-> **Enforcing sync order with sync waves:** The list above describes the recommended sequence, but ArgoCD syncs all apps in a root application concurrently by default. To guarantee ordering, add an `argocd.argoproj.io/sync-wave` annotation to each `Application` manifest. ArgoCD processes waves from lowest to highest and waits for each wave to be fully `Healthy` before starting the next:
+> **Enforcing sync order with sync waves:** The list above describes the recommended sequence, but ArgoCD syncs all apps in a root application concurrently by default. To guarantee ordering, add an `argocd.argoproj.io/sync-wave` annotation to each `Application` manifest. ArgoCD processes waves from lowest to highest and waits for each wave to be fully `Healthy` before starting the Next:
 >
 > ```yaml
 > metadata:
@@ -140,4 +140,4 @@ Apps will show `Progressing` while images are pulling. `Degraded` with `ImagePul
 
 > **Checkpoint:** Once everything shows `Healthy`, the cluster is fully GitOps-managed. ArgoCD is watching your repository and reconciling the cluster to match it continuously. From this point on, to change anything in the cluster, commit to git. If you manually edit a resource, ArgoCD reverts it. If a namespace gets deleted by accident, ArgoCD recreates it. The cluster is now self-healing.
 
-→ **Next:** [Deploy Your First App](../04-deploy/)
+**Next:** [Deploy Your First App](../04-deploy/)

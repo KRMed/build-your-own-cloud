@@ -71,4 +71,4 @@ resources:
 
 Each app directory has its own `kustomization.yaml` listing its own manifests. Kustomize treats these independently - changing one app's manifests does not affect the others.
 
-→ **Next:** [Create In-Cluster Secrets](cluster-secrets.md)
+**Next:** [Create In-Cluster Secrets](cluster-secrets.md)

@@ -142,4 +142,4 @@ If your app needs to write to its filesystem (e.g. a web server writing cache fi
 
 > **Reference:** [Configure a Security Context for a Pod](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
-→ **Next:** [Deploy Your First App End-to-End](first-app.md)
+**Next:** [Deploy Your First App End-to-End](first-app.md)

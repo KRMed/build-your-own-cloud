@@ -72,4 +72,4 @@ Yes. Restart the existing server node with `--cluster-init` to convert it to emb
 
 ---
 
-→ **Back to:** [single-node.md](single-node.md) | [multi-node.md](multi-node.md) | [ha-setup.md](ha-setup.md)
+**Back to:** [single-node.md](single-node.md) | [multi-node.md](multi-node.md) | [ha-setup.md](ha-setup.md)

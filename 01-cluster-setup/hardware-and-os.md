@@ -60,4 +60,4 @@ The rest of this guide uses generic Linux commands that work on any of these. OS
 
 K3S itself runs on any modern 64-bit Linux distribution: Fedora, Rocky Linux, Alma Linux, Arch, openSUSE, and others all work. However, the OS-specific guidance in this guide (firewall, static IP, boot parameters) explicitly covers only Ubuntu, Debian, and Raspberry Pi OS. If you are on a different distro, you will need to translate those steps yourself. The [K3S installation requirements](https://docs.k3s.io/installation/requirements) page covers known distro-specific considerations
 
-**Next:** [prepare-nodes.md](prepare-nodes.md)
+**  Next:** [prepare-nodes.md](prepare-nodes.md)

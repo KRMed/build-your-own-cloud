@@ -225,4 +225,4 @@ Once the first app is working, every new app follows the same pattern:
 3. If it needs access protection, add a [Cloudflare Access](../05-extras/cloudflare-access.md) policy for it
 4. Merge the PR; DNS propagates automatically via Cloudflare
 
-→ **Next:** [Extras](../05-extras/)
+**Next:** [Extras](../05-extras/)

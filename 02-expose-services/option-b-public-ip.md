@@ -105,4 +105,4 @@ spec:
 
 **Why you might still want a Cloudflare tunnel even with a public IP:** WAF, DDoS mitigation, and hiding your home IP in DNS. But it is not required.
 
-→ **Next:** [GitOps](../03-gitops/)
+**Next:** [GitOps](../03-gitops/)

@@ -88,4 +88,4 @@ kubectl create secret generic <SECRET_NAME> \
   -n <APP_NAMESPACE>
 ```
 
-→ **Next:** [What is GitOps and Why Use It](what-is-gitops.md)
+**Next:** [What is GitOps and Why Use It](what-is-gitops.md)

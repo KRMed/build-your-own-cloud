@@ -119,4 +119,4 @@ The status column should show `Successful`. If it shows `Failed`, check that the
 
 > **Troubleshooting repo connections:** ArgoCD supports SSH keys, HTTPS with username/password or tokens, and GitHub App authentication. If your connection is failing, the [ArgoCD private repositories documentation](https://argo-cd.readthedocs.io/en/stable/user-guide/private-repositories/) covers all methods with troubleshooting steps for each. The most common failure causes are: wrong key format, the public key added to the wrong repository, or a firewall blocking outbound SSH (port 22) from the cluster, in which case switch to HTTPS.
 
-→ **Next:** [App of Apps](app-of-apps.md)
+**Next:** [App of Apps](app-of-apps.md)
