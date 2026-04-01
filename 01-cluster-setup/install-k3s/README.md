@@ -21,6 +21,5 @@ K3S is a lightweight, certified Kubernetes distribution that packages containerd
 | [High-availability](ha-setup.md) | 3+ servers | Embedded etcd across 3 server nodes. Tolerates 1 control plane failure. |
 
 > [!TIP]
-> Unsure about Multi-node vs HA? Read [multi-node-vs-ha.md](multi-node-vs-ha.md) first. It is short and helps you choose quickly.
->
+> Unsure about Multi-node vs HA? Read [multi-node-vs-ha.md](multi-node-vs-ha.md) first. 
 > Not sure? Start with single-node. You can add agent nodes later without reinstalling, and migrate to HA when you actually need it.
