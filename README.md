@@ -6,7 +6,7 @@ This guide walks you through all of it, starting from bare hardware and ending w
 
 This covers most of what went into building my personal cloud project firsthand. Use it to get something running, then go read the official docs, experiment, break things, and learn from them. Every reference link throughout the guide is a good next step or starting point to learn from
 
-**Beginners are welcome.** No prior experience with any of these technologies is required.
+**Beginners are welcome.** No prior experience with any of these technologies is required. Feel free to give a ⭐ too!
 
 <div align="center">
 
