@@ -33,11 +33,11 @@ This covers most of what went into building my personal cloud project firsthand.
 
 | | Folder | What's inside | After this section |
 |---|---|---|---|
-| 🟢 | [01 Cluster Setup](01-cluster-setup/) | Hardware options, OS prep, K3S install (single-node, multi-node, HA), kubectl, Helm | K3S running, kubectl working from your local machine |
-| 🟢 | [02 Expose Services](02-expose-services/) | Cloudflare Tunnel, public IP/VPS, and LAN-only access options | Services reachable from your LAN or the internet |
-| 🟢 | [03 Gitops](03-gitops/) | Kustomize, cluster secrets, ArgoCD bootstrap, app-of-apps pattern | ArgoCD managing your cluster - commit to git, the cluster follows |
-| 🟢 | [04 Deploy](04-deploy/) | Writing app manifests, deploying your first app end-to-end | A real app live in a browser at your own domain |
-| 🟢 | [05 Extras](05-extras/) | Cloudflare Access, monitoring & alerting, persistent storage, CI/CD pipelines | Auth, observability, and CI gates in place |
+| 🟢 | [01-Cluster Setup (Start here)](01-cluster-setup/) | Hardware options, OS prep, K3S install (single-node, multi-node, HA), kubectl, Helm | K3S running, kubectl working from your local machine |
+| 🟢 | [02-Expose Services](02-expose-services/) | Cloudflare Tunnel, public IP/VPS, and LAN-only access options | Services reachable from your LAN or the internet |
+| 🟢 | [03-Gitops](03-gitops/) | Kustomize, cluster secrets, ArgoCD bootstrap, app-of-apps pattern | ArgoCD managing your cluster - commit to git, the cluster follows |
+| 🟢 | [04-Deploy](04-deploy/) | Writing app manifests, deploying your first app end-to-end | A real app live in a browser at your own domain |
+| 🟢 | [05-Extras](05-extras/) | Cloudflare Access, monitoring & alerting, persistent storage, CI/CD pipelines | Auth, observability, and CI gates in place |
 | | [references](references/) | Troubleshooting, useful tools, resetting your cluster, reference links | |
 
 ---
